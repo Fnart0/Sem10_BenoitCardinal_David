@@ -1,0 +1,272 @@
+/*  -------------------------
+    Générique
+    -------------------------   */
+
+    html {
+        box-sizing: border-box;
+        font: 1.6rem;
+    }
+
+    
+
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+
+    body {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .wrapper {
+        max-width: 1206px;
+        margin: 0 auto;
+    }
+
+/*  -------------------------
+    Composants texte
+    -------------------------   */
+
+    p {
+        font: normal 18px/27px "Roboto", sans-serif;
+    }
+
+/*  ------------ Nav ------------   */
+
+    .logo {
+        font: normal 42px "Josefin Sans", sans-serif;
+
+        margin: 14px 0;
+    }
+
+/*  ------------ Header ------------   */
+
+    .btn_header {
+        font: normal 18px/28px "Roboto", sans-serif;
+        color: white;
+        background-color: #C0392B;
+
+        height: 40px;
+        width: 110px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-decoration: none;
+    }
+
+    header .haut {
+        font: normal 18px/28px "Roboto", sans-serif;
+        color: white;
+
+        margin: 0;
+    }
+
+    header .bas {
+        font: normal 18px/28px "Roboto", sans-serif;
+        color: white;
+
+        margin: 0;
+    }
+
+    h1 {
+        font: bold 48px/55px "Roboto", sans-serif;
+        color: white;
+
+        margin: 0;
+    }
+
+/*  ------------ Section produits ------------   */
+
+    h2 {
+        font: bold 36px/41px "Josefin Sans", sans-serif;
+        color: #474747;
+
+        padding-top: 76px;
+        margin: 0;
+    }
+
+    h3 {
+        font: bold 22px/25px "Josefin Sans", sans-serif;
+        color: #E25254;
+
+        padding: 29px 30px;
+    }
+
+    .titre:before {
+        content: 'filter_1';
+        display: inline-block;
+        font-family: 'Material Icons';
+        font-size: 1.4rem;
+        line-height: 1;
+        margin-right: 3px;
+    }
+
+    .titre2:before {
+        content: 'filter_2';
+        display: inline-block;
+        font-family: 'Material Icons';
+        font-size: 1.4rem;
+        line-height: 1;
+        margin-right: 3px;
+    }
+
+    .titre3:before {
+        content: 'filter_3';
+        display: inline-block;
+        font-family: 'Material Icons';
+        font-size: 1.4rem;
+        line-height: 1;
+        margin-right: 3px;
+    }
+
+    .titre4:before {
+        content: 'filter_4';
+        display: inline-block;
+        font-family: 'Material Icons';
+        font-size: 1.4rem;
+        line-height: 1;
+        margin-right: 3px;
+    }
+
+    .titre5:before {
+        content: 'filter_5';
+        display: inline-block;
+        font-family: 'Material Icons';
+        font-size: 1.4rem;
+        line-height: 1;
+        margin-right: 3px;
+    }
+
+    .titre6:before {
+        content: 'filter_6';
+        display: inline-block;
+        font-family: 'Material Icons';
+        font-size: 1.4rem;
+        line-height: 1;
+        margin-right: 3px;
+    }
+
+    .grille_produits p {
+        padding: 0 32px 83px;
+        margin: 0;
+    }
+
+/*  ------------ Section conseils ------------   */
+
+
+
+/*  ------------ Footer ------------   */
+
+    footer p {
+        font: normal 18px/25px "Roboto", sans-serif;
+        color: white;
+    }
+
+/*  -------------------------
+    Composants
+    -------------------------   */
+
+/*  ------------ Nav ------------   */
+
+    nav {
+        background-color: white;
+    }
+
+    nav .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 10px;
+
+        list-style-type: none;
+    }
+
+    nav a {
+        text-decoration: none;
+
+        font: normal 18px "Roboto", sans-serif;
+        color: #474747;
+    }
+
+/*  ------------ Header ------------   */
+
+    header {
+        background: url(../images/hero.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    header .wrapper {
+        height: 600px;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    header .boite {
+        background-color: rgb(226, 82, 84, 0.9);
+        height: 510px;
+        width: 600px;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: end;
+        flex-direction: column;
+
+        padding: 0 30px;
+    }
+
+/*  ------------ Section produits ------------   */
+
+    .produits {
+        background-color: #ECF0F1;
+    }
+
+    .produits .grille_produits {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 37px;
+    }
+
+    .produits .titre1 {
+        background-color: white;
+    }
+
+    .produits .titre1:hover {
+        background-color: #E25254;
+        color: white;
+    }
+
+    .grille_produits {
+        margin-bottom: 30px;
+    }
+
+    .produits .texte p {
+        margin: 2px 0 12px;
+    }
+
+    .grille {
+        padding-bottom: 83px;
+    }
+
+/*  ------------ Section conseils ------------   */
+
+
+
+/*  ------------ Footer ------------   */
+
+footer {
+    background-color: #E25254;
+}
+
+footer .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
