@@ -87,6 +87,10 @@
         margin: 0;
     }
 
+    .conseils h2 {
+        color: white;
+    }
+
     h3 {
         font: bold 22px/25px "Josefin Sans", sans-serif;
         color: #E25254;
@@ -94,7 +98,7 @@
         padding: 29px 30px;
     }
 
-    .titre:before {
+    .titre1:before {
         content: 'filter_1';
         display: inline-block;
         font-family: 'Material Icons';
@@ -155,7 +159,49 @@
 
 /*  ------------ Section conseils ------------   */
 
+    .conseils .texte p {
+        margin: 0 0 40px;
+        color: white;
+    }
 
+    .conseils .grille_conseils p {
+        margin: 21px 35px 19px 70px;
+    }
+
+    .conseils .grille_conseils .plus {
+        margin: 21px 35px 19px 70px;
+        text-align: right;
+    }
+
+    .titre_conseil1:before {
+        content: 'star';
+        display: inline-block;
+        font-family: 'Material Icons';
+        font-size: 1.4rem;
+        line-height: 1;
+        margin-right: 13px;
+        color: black;
+    }
+
+    .titre_conseil2:before {
+        content: 'star_half';
+        display: inline-block;
+        font-family: 'Material Icons';
+        font-size: 1.4rem;
+        line-height: 1;
+        margin-right: 13px;
+        color: black;
+    }
+
+    .titre_conseil3:before {
+        content: 'star';
+        display: inline-block;
+        font-family: 'Material Icons';
+        font-size: 1.4rem;
+        line-height: 1;
+        margin-right: 13px;
+        color: black;
+    }
 
 /*  ------------ Footer ------------   */
 
@@ -234,11 +280,11 @@
         gap: 37px;
     }
 
-    .produits .titre1 {
+    .produits .titre {
         background-color: white;
     }
 
-    .produits .titre1:hover {
+    .produits .titre:hover {
         background-color: #E25254;
         color: white;
     }
@@ -257,16 +303,59 @@
 
 /*  ------------ Section conseils ------------   */
 
+.conseils {
+    background: rgb(226, 82, 84) url(../images/tuile.jpg) repeat;
 
+}
+
+.grille_conseils {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 37px;
+
+    padding: 0 0 72px;
+}
 
 /*  ------------ Footer ------------   */
 
-footer {
-    background-color: #E25254;
+    footer {
+        background-color: #E25254;
+    }
+
+    footer .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .conseils .conseil1 {
+        background-color: white;
+    }
+
+    .conseils .conseil2 {
+        background-color: white;
+    }
+
+    .conseils .conseil3 {
+        background-color: white;
+    }
+
+/*  ------------ Modale ------------   */
+
+.modale {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.5);
+
+    color: #E25254;
+    font-size: 180px;
 }
 
-footer .wrapper {
+.modale.visible {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
 }
