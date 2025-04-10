@@ -304,7 +304,7 @@
 /*  ------------ Section conseils ------------   */
 
 .conseils {
-    background: rgb(226, 82, 84) url(../images/tuile.jpg) repeat;
+    background: url(../images/tuile.jpg) repeat;
 
 }
 
@@ -345,12 +345,17 @@
 .modale {
     display: none;
     position: fixed;
-    z-index: 1;
+    top: 0;
+    left: 0;
+    z-index: 2;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: rgb(0, 0, 0, 0.8);
 
     color: #E25254;
+}
+
+.modale p {
     font-size: 180px;
 }
 
